@@ -1,0 +1,11 @@
+config:
+  target: https://www.sainsburys.co.uk
+  processor: './tests/performance-scripts.ts'
+  engines:
+    playwright:
+      launchOptions:
+        headless: false
+scenarios:
+  - name: "ATB"
+    engine: playwright
+    testFunction: 'atb'

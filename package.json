@@ -1,0 +1,19 @@
+{
+  "name": "sainsburys-tech-exercise",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "artillery run config.yml --quiet --output results.json && artillery report results.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  },
+  "dependencies": {
+    "artillery": "^2.0.17",
+    "playwright": "^1.45.1",
+    "@playwright/test": "^1.45.1"
+  }
+}
