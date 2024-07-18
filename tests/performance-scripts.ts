@@ -43,6 +43,9 @@ export async function atb(
         // Check the title of the page is correct
         await expect(page).toHaveTitle(/Trolley | Sainsbury's/);
         await expect(page.locator('[data-test-id="trolley-item"]')).toBeVisible();
+        
+        // Pause for 5s and take a screenshot
+        await page.waitForTimeout(5000);
         await page.screenshot({ path: `trolley-${Date.now()}.png` });
     });
 }
